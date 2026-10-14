@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* Fundo Amarelo Pastel */
+    background-color: #fef9e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.modal-container {
+    width: 100%;
+    max-width: 550px;
+}
+
+/* Modal Roxo Pastel com visual 3D */
+.modal-card {
+    background: #e8dff5; /* Roxo pastel */
+    border-radius: 24px;
+    padding: 30px;
+    /* Sombras e bordas criando estilo 3D */
+    box-shadow: 0px 10px 0px #c3b1e1, 0px 15px 25px rgba(0, 0, 0, 0.1);
+    border: 3px solid #d4c3f0;
+    text-align: center;
+}
+
+.titulo {
+    color: #5a3d7c;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 0px #fff;
+}
+
+.caixa-busca {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: 2px solid #c3b1e1;
+    outline: none;
+    font-size: 1rem;
+    background: #ffffff;
+    color: #3d235a;
+}
+
+/* Botões com efeito de clique e relevo 3D */
+button {
+    background-color: #d2b7e5;
+    color: #3d235a;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 5px 0px #b193cd;
+    transition: all 0.1s ease;
+}
+
+button:hover {
+    background-color: #c8a7dd;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: 0px 1px 0px #b193cd;
+}
+
+.caixa-resultado {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.texto-resultado {
+    background: #f3edfc;
+    padding: 15px;
+    border-radius: 12px;
+    color: #4a2e6d;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    border: 2px solid #d4c3f0;
+    text-align: left;
+}
+
+.fonte-noticia {
+    color: #6c479c;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.btn-voz {
+    background-color: #b5ead7;
+    box-shadow: 0px 5px 0px #88c9b3;
+    color: #1b4d3e;
+    width: 100%;
+}
+
+#carregando {
+    color: #5a3d7c;
+    font-weight: bold;
+}
+
+.esconder {
+    display: none;
+}
