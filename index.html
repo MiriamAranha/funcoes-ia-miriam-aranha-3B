@@ -3,17 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Missão I.A por Rodrigo</title>
+    <title>Respostas de Slime em Tempo Real</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="caixa-principal">
-        <h1>Rodrigo decide o futuro da I.A</h1>
-            <div class="caixa-perguntas"></div>
-            <div class="caixa-alternativas"></div>
-            <div class="caixa-resultados"></div>
-                <p class="texto-resultado"></p>
+    <div class="modal-container">
+        <div class="modal-card">
+            <h1 class="titulo">✨ Pesquisa sobre Slime ✨</h1>
+            
+            <div class="caixa-busca">
+                <input type="text" id="campo-pergunta" placeholder="Faça uma pergunta sobre slime (ex: O que é slime?)">
+                <button id="btn-buscar">Pesquisar na Web</button>
+            </div>
+            
+            <div class="caixa-resultado esconder" id="caixa-resultado">
+                <div id="carregando" class="esconder">🔎 Buscando resposta na web...</div>
+                
+                <p class="texto-resultado" id="texto-resultado"></p>
+                
+                <div class="fonte-noticia">
+                    <span id="fonte-noticia-texto"></span>
+                </div>
+                
+                <div class="caixa-audio">
+                    <button id="btn-ouvir" class="btn-voz">🔊 Ouvir resposta por I.A</button>
+                </div>
+            </div>
+        </div>
     </div>
-<script src="script.js"></script>    
+
+    <script src="script.js"></script>    
 </body>
 </html>
